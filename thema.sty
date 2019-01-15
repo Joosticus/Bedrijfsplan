@@ -12,23 +12,20 @@
 
 %%%%%%%%%%%%%% THEME PART %%%%%%%%%%%%%%%%%%
 
-%%%%% Fonts
+%\setmainfont{IBM Plex Sans}
+\setmainfont[
+	BoldFont={IBM Plex Sans:style=Bold}, 
+	ItalicFont={IBM Plex Sans Light:style=Light Italic},
+	BoldItalicFont={IBM Plex Sans:style=Bold Italic}
+	]{IBM Plex Sans Light}
 
-% Suggestions:
-% Comfortaa, Merriweather, Coco Gothic, Open Sans, Montserrat, Raleway, Lato, Roboto, Quicksans
-
-\RequirePackage[usefilenames,% Important for XeLaTeX
-   RMstyle=Light,
-   SSstyle=Light,
-   TTstyle=Light
-   % DefaultFeatures={Ligatures=Common}
-   ]
-   {plex-otf} % Sets plex as body font
+\setsansfont[
+        BoldFont={Mohave:style=Bold},
+        ItalicFont={Mohave:style=Italic},
+        BoldItalicFont={Mohave:style=Bold Italic}
+        ]{Mohave:style=Regular}
 
 \defaultfontfeatures{Ligatures=TeX}
-% Set sans serif font to Mohave, making it the headline font
-\setsansfont{Mohave}
-
 
 %%%%% Colors
 
